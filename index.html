@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>千图网</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+<div class="father">
+    <div class="head">
+        <div class="container">
+            <div class="logo"></div>
+            <ul>
+                <li>首页</li>
+                <li>首页</li>
+                <li>首页</li>
+                <li>首页</li>
+                <li>首页</li>
+                <li>首页</li>
+            </ul>
+        </div>
+    </div>
+    <div class="pic">
+        <ul class="list">
+            <li><img src="./images/images/homework_t.png" alt=""></li>
+            <li><img src="./images/images/homework_13.png" alt=""></li>
+            <li><img src="./images/images/homework_15.png" alt=""></li>
+            <li><img src="./images/images/homework_01.png" alt=""></li>
+        </ul>
+        <div class="f">
+            <div class="prev">
+                <img src="./images/images/prev.jpg" alt="">
+            </div>
+            <div class="font">
+                <h2>标题标题标题</h2>
+                <P>标题标题</P>
+                <div class="more">了解更多</div>
+            </div>
+            <div class="next">
+                <img src="./images/images/next.jpg" alt="">
+            </div>
+            <ul class="index-list">
+                <li class="index active"></li>
+                <li class="index"></li>
+                <li class="index"></li>
+                <li class="index"></li>
+              </ul>
+        </div>
+    </div>
+    <div class="c-logo">
+        <ul class="contain">
+        <li>
+            <img src="./images/images/homework_08.jpg" alt="">
+        </li>
+        <li>
+            <img src="./images/images/homework_11.jpg" alt="">
+        </li>
+        <li><img src="./images/images/homework_14.jpg" alt=""></li>
+        <li><img src="./images/images/homework_16.jpg" alt=""></li>
+        </ul>
+    </div>
+    <div class="img-list">
+        <ul>
+            <li>
+                <img src="" lazyload="true" data="./images/images/homework_03.jpg" alt="">
+            </li>
+            <li><img src="" lazyload="true" data="./images/images/homework_03.jpg" alt=""></li>
+            <li><img src="" lazyload="true" data="./images/images/homework_03.jpg" alt=""></li>
+            <li><img src="" lazyload="true" data="./images/images/homework_03.jpg" alt=""></li>
+            <li><img src="" lazyload="true" data="./images/images/homework_03.jpg" alt=""></li>
+        </ul>
+    </div>
+    <div class="img-line">
+        <div class="conlef">
+            <img src="./images/images/homework_05.jpg" alt="">
+        </div>
+        <div class="conrig">
+            <img src="./images/images/homework-y_06.png" alt="">
+        </div>
+    </div>
+    <div class="qiantu">
+        <div class="coop">
+            <img src="./images/images/homework_29.png" alt="">
+        </div>
+        <ul class="img-qiantu">
+            <li class="item"></li>
+            <li class="item"></li>
+            <li class="item"></li>
+            <li class="item"></li>
+            <li class="item"></li>
+            <li class="item"></li>
+            <li class="item"></li>
+            <li class="item"></li>
+            <li class="item"></li>
+            <li class="item"></li>
+            <li class="item"></li>
+            <li class="item"></li>
+        </ul>
+    </div>
+    <div class="bottom1">
+        <img src="./images/images/homework_35.png" alt="">
+    </div>
+    <div class="bottom2">
+        <img src="./images/images/homework_06.png" alt="">
+    </div>
+<button>返回顶部</button>
+</div>
+</body>
+<script src="./index.js"></script>
+<script>qiantu.init();
+    var butnTop = document.getElementsByTagName('button')[0];
+         butnTop.onclick = function ()
+        {
+            window.scroll(0,0);
+        };
+        var imgList = document.getElementsByClassName('img-list')[0];
+        var lis = imgList.getElementsByTagName('img');
+        var viewHeight =document.documentElement.clientHeight;
+         function lazy (methd,time) {
+            let distance =imgList.getBoundingClientRect().top;
+            if(distance <=viewHeight && !lis.src){
+                for(var i = 0;i<lis.length;i++){
+                        lis[i].src = lis[i].getAttribute('data');
+                }
+            }
+      };
+      window.addEventListener('scroll', lazy, false);
+      window.onload = lazy;
+    </script>
+</html>

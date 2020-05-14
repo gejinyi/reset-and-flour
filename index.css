@@ -1,0 +1,183 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.father{
+    width: 1920px;
+    height: 2899px;
+    /* background: url(./images/images/homework.jpg) no-repeat; */
+}
+.head .container{
+    height: 90px;
+}
+.head .container .logo{
+    height: 90px;
+    width: 199px;
+    background:url(./images/images/homework_02.jpg) no-repeat;
+    float: left;
+    margin-left: 360px;
+    margin-right: 103px;
+}
+.head .container ul li{
+    list-style: none;
+    float: left;
+    margin-left: 40px;
+    line-height: 90px;
+}
+.pic{
+    height: 410px;
+    width: 1920px;
+    overflow: hidden;
+    position: relative;
+}
+.pic .f .font{
+    height: 410px;
+    width: 1920px;
+    right: 610px;
+}
+.pic .f .prev{
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    margin-left: 610px;
+    margin-top: 165px;
+}
+.pic .f .next{
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    right: 310px;
+    margin-top: 165px;
+    position: absolute;
+}
+.pic .list {
+    display: flex;
+    position: absolute;
+    margin-left: 0px;
+    width: 1920*4px;
+    transition:  all .2s;
+}
+.pic .list li{
+    list-style: none;
+    height: 410px;
+    width: 1920px;
+}
+.pic .f{
+    display:  inline-flex;
+    position: relative;
+}
+.pic .f .font{
+    color: aliceblue;
+    position: relative;
+    width: 400px;
+    margin-left: 655px;
+
+}
+.pic .f .font h2{
+    margin-bottom: 32px;
+    margin-top: 100px;
+}
+.pic .f .font .more{
+    border:1px solid aliceblue;
+    width: 140px;
+    height: 45px;
+    line-height: 45px;
+    position: absolute;
+    text-align: center;
+    margin-top: 53px;
+    cursor: pointer;
+}
+.c-logo{
+    background-color: #d9251e;
+    height: 397px;;
+}
+.c-logo .contain{
+    margin-left: 360px;
+}
+.contain li{
+    width: 242px;
+    float: left;
+    list-style: none;
+    margin-right: 134px;
+}
+ .line{
+    height: 97px;
+    background: url(./images/images/homework_b.jpg) no-repeat;
+}
+.img-list{
+    margin-left: 392px;
+    height: 445px;
+    margin-bottom: 52px;
+}
+.img-list li{
+    height: 445px;
+    width: 218px;
+    float: left;
+    margin-right: 2px;
+    border-right: 4px solid #dddddd;
+    list-style: none;
+}
+.bottom2{
+    height: 90PX;
+} 
+.bottom1{
+    height: 222PX;
+}
+.qiantu{
+    margin-left: 392px;
+}
+.conlef{
+    margin-left: 360px;
+}
+.conlef,.conrig{
+    float: left;
+}
+.qiantu .img-qiantu{
+    display: grid;
+    grid-template-rows:repeat(3,132px);
+    grid-template-columns: repeat(4,300px);
+    margin-top: 79px;
+    margin-bottom: 114px;
+}
+.qiantu .img-qiantu li{
+    list-style: none;
+    background: url(./images/images/homework_32.png);
+    border-bottom: .5px solid #bebebe;
+}
+button{
+    position: fixed;
+    border-radius: 50%;
+    color: #d9251e;
+    left: 50px;
+    top: 100px;
+    height: 100px;
+    width: 100px;
+    background-color: rgba(162, 162, 223,.6);
+    border: 0px;
+    cursor: pointer;
+}
+.index-list {
+    position: absolute;
+    bottom: 30px;
+    right: 710px;
+    font-size: 0;
+  }
+  
+.index {
+    display: inline-block;
+    vertical-align: middle;
+    width: 6px;
+    height: 6px;
+    border: 2px solid transparent;
+    background-color: #d9251e;
+    border-radius: 50%;
+    margin-left: 10px;
+    transition: all .2s;
+    cursor: pointer;
+  }
+.index:hover {
+    background-color: #fff;
+  }
+  .index.active {
+    background-color: #fff;
+  }
